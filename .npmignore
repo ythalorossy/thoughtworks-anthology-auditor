@@ -1,0 +1,18 @@
+# Anything that doesn't belong in the published tarball.
+# `files` in package.json is the allow-list; this is the defence in depth.
+
+.git/
+.github/
+.vscode/
+.idea/
+node_modules/
+*.tgz
+*.log
+.DS_Store
+test/
+tests/
+__tests__/
+coverage/
+.npmrc
+.env
+.env.*

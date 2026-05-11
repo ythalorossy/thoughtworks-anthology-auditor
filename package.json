@@ -1,0 +1,46 @@
+{
+  "name": "@ythalorossy/thoughtworks-anthology-auditor",
+  "version": "0.1.0",
+  "description": "Claude skill — audits a codebase for code-quality smells (OO discipline, primitive obsession, train wrecks, anaemic domain, framework coupling, god validators, DDD purity) and produces a severity-ranked Markdown report. Based on Object Calisthenics and Domain Annotations from The ThoughtWorks Anthology (2008).",
+  "keywords": [
+    "claude",
+    "claude-skill",
+    "claude-code",
+    "code-review",
+    "code-quality",
+    "audit",
+    "object-calisthenics",
+    "ddd",
+    "domain-driven-design",
+    "thoughtworks",
+    "anthology",
+    "refactoring",
+    "static-analysis",
+    "code-smells"
+  ],
+  "homepage": "https://github.com/ythalorossy/thoughtworks-anthology-auditor#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ythalorossy/thoughtworks-anthology-auditor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ythalorossy/thoughtworks-anthology-auditor/issues"
+  },
+  "license": "MIT",
+  "author": "Ythalo Saldanha <ysaldanha@checkbook.org>",
+  "bin": {
+    "thoughtworks-anthology-auditor": "bin/install.js"
+  },
+  "files": [
+    "bin/",
+    "skill/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
