@@ -19,10 +19,12 @@ The skill diagnoses smells in plain code-review voice — it doesn't lecture rea
 ## Install
 
 ```bash
-npx @ythalorossy/thoughtworks-anthology-auditor
+npx -y @ythalorossy/thoughtworks-anthology-auditor
 ```
 
 That installs the skill into `~/.claude/skills/thoughtworks-anthology-auditor/` so Claude (Claude Code and Cowork mode) can use it across all projects on your machine.
+
+> The `-y` flag auto-confirms the first-time install prompt. On Windows in particular, that prompt can desync npx's bin shim resolution and produce a `'thoughtworks-anthology-auditor' is not recognized as an internal or external command` error — `-y` avoids it. Safe on macOS and Linux too.
 
 ### Options
 
@@ -35,13 +37,13 @@ That installs the skill into `~/.claude/skills/thoughtworks-anthology-auditor/` 
 
 ```bash
 # project-local install
-npx @ythalorossy/thoughtworks-anthology-auditor --project
+npx -y @ythalorossy/thoughtworks-anthology-auditor --project
 
 # overwrite an existing version
-npx @ythalorossy/thoughtworks-anthology-auditor --force
+npx -y @ythalorossy/thoughtworks-anthology-auditor --force
 ```
 
-> **Note on `npx -i`.** `npx` doesn't have an `-i` flag — the right syntax is just `npx <package>`. If you've seen `npx -i` somewhere, that's a typo for `npm i` (which installs the package as a dependency, not what you want here).
+> **Note on `npx -i`.** `npx` doesn't have an `-i` flag — the right syntax is just `npx -y <package>`. If you've seen `npx -i` somewhere, that's a typo for `npm i` (which installs the package as a dependency, not what you want here).
 
 ## Use
 

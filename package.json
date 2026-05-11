@@ -1,6 +1,6 @@
 {
   "name": "@ythalorossy/thoughtworks-anthology-auditor",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Claude skill — audits a codebase for code-quality smells (OO discipline, primitive obsession, train wrecks, anaemic domain, framework coupling, god validators, DDD purity) and produces a severity-ranked Markdown report. Based on Object Calisthenics and Domain Annotations from The ThoughtWorks Anthology (2008).",
   "keywords": [
     "claude",

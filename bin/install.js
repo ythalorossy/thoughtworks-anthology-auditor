@@ -7,10 +7,15 @@
  *   - ./.claude/skills/thoughtworks-anthology-auditor/    (with --project)
  *
  * Usage:
- *   npx @ythalorossy/thoughtworks-anthology-auditor
- *   npx @ythalorossy/thoughtworks-anthology-auditor --project
- *   npx @ythalorossy/thoughtworks-anthology-auditor --force
- *   npx @ythalorossy/thoughtworks-anthology-auditor --help
+ *   npx -y @ythalorossy/thoughtworks-anthology-auditor
+ *   npx -y @ythalorossy/thoughtworks-anthology-auditor --project
+ *   npx -y @ythalorossy/thoughtworks-anthology-auditor --force
+ *   npx -y @ythalorossy/thoughtworks-anthology-auditor --help
+ *
+ * The `-y` flag auto-confirms the first-time install prompt. It avoids a
+ * known Windows-only issue where the prompt desyncs npx's bin shim
+ * resolution and cmd.exe errors with "'thoughtworks-anthology-auditor'
+ * is not recognized as an internal or external command".
  */
 
 'use strict';
@@ -127,7 +132,7 @@ function printHelp() {
   thoughtworks-anthology-auditor — install the skill into your Claude config
 
   Usage:
-    npx @ythalorossy/thoughtworks-anthology-auditor [options]
+    npx -y @ythalorossy/thoughtworks-anthology-auditor [options]
 
   Options:
     --project, -p    Install into ./.claude/skills (current working directory)
@@ -136,8 +141,8 @@ function printHelp() {
     --help, -h       Show this help.
 
   Examples:
-    npx @ythalorossy/thoughtworks-anthology-auditor
-    npx @ythalorossy/thoughtworks-anthology-auditor --project
-    npx @ythalorossy/thoughtworks-anthology-auditor --force
+    npx -y @ythalorossy/thoughtworks-anthology-auditor
+    npx -y @ythalorossy/thoughtworks-anthology-auditor --project
+    npx -y @ythalorossy/thoughtworks-anthology-auditor --force
   `);
 }
